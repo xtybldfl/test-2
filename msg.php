@@ -7,7 +7,7 @@ if(isset($_POST['msg'])){
 	setmsg($filename, $_POST);
 	flush();
 	header('refresh:1;url=msg.php');
-	echo "<script>alert('添加成功');</sctipt>";
+	echo "<script>alert('添加');</sctipt>";
 	$showmsg=getmsg('file/msg.txt');
 }else{
 	$showmsg=getmsg('file/msg.txt');
